@@ -22,10 +22,15 @@ span{
 font-family: 'Open Sans', sans-serif;
 }
 
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
 /** Header **/
 
 nav{
-  height: 64px;
+  height: 4rem;
   background-color: white;
   color: white;
   display: flex;
@@ -39,7 +44,7 @@ nav div{
 }
 
 ul{
-  margin-right: 16px;
+  margin-right: 1rem;
 }
 
 ul li{
@@ -50,7 +55,7 @@ ul li{
 
 .logoimage{
   height: 100%;
-  padding-left: 16px;
+  padding-left: 1rem;
 }
 
 .logobox{
@@ -58,7 +63,7 @@ ul li{
 }
 
 #academy{
-  color: orange;
+  color: #8AB2A3;
 }
 
 #colmar{
@@ -75,7 +80,7 @@ ul li{
   width: 60%;
   height: auto;
   overflow: hidden;
-  padding: 32px 40px 32px 24px;
+  padding: 2rem 2.5rem 2rem 1.5rem;
 }
 
 .banner-image img{
@@ -84,9 +89,8 @@ ul li{
   display: block;
 }
 
-.column{
-  display: flex;
-  flex-direction: column;
+#white{
+  color: white;
 }
 
 .learn{
@@ -94,4 +98,135 @@ ul li{
   max-width: 40%;
   color: #fff;
   max-width: 30%;
+}
+
+.button{
+  display: flex;
+  justify-content: center;
+  background-color: #6DFFC9;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #8AB2A3;
+}
+
+.button p{
+  display: flex;
+  width: 90%;
+  padding: 5px 0px;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/** main section **/
+
+.main{
+  background-color: white;
+}
+
+.textcolor{
+  color: grey;
+}
+
+.information{
+  max-width: 33%;
+  border-left: 1px solid #FF7C0F;
+}
+
+.top {
+    margin-top: 2rem;
+}
+
+.thumbnail{
+    width: 35%;
+    height: auto;
+    overflow: hidden;
+    margin: 1rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #8AB2A3;
+}
+
+div .thumbnail img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+div.information .column {
+    width: 55%;
+}
+
+.information h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.information p {
+    margin-bottom: 1.5rem;
+}
+
+.column p{
+  color: grey;
+}
+
+.column h4{
+  color: grey;
+}
+
+.information a{
+  color: #55C9FF;
+}
+
+/** Course section **/
+
+.learning{
+  background-color: #FF876D;
+  padding: 32px 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.background{
+  background-color: #FF876D;
+}
+
+.learning h2{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+div.course-list {
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 80%;
+}
+
+.courses-thumbnail {
+    width: auto;
+    height: 10rem;
+    overflow: hidden;
+}
+
+.courses {
+    max-width: 30%;
+    background-color: white;
+    margin-bottom: 1rem;
+}
+.courses-thumbnail img{
+    max-height: 100%;
+    width: auto;
+    display: block;
+}
+
+#bold{
+  font-weight: 800;
+  color: #403E3E;
+}
+
+.courses .column {
+    margin: 1rem 1rem 1.5rem 1rem;
 }
