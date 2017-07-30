@@ -31,6 +31,92 @@ font-family: 'Open Sans', sans-serif;
   flex-direction: column;
 }
 
+/** Animations **/
+
+.button {
+  padding: 5px 0px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+}
+
+.button:hover {background-color: #64B27B}
+
+.button:active {
+  background-color: #64B27B;
+  transform: translateY(4px);
+}
+
+/** Header animation **/
+
+.box {
+  position:relative;
+  vertical-align: middle;
+  color: #0b7;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  transition: 0.5s;
+  padding: 0 20px;
+  cursor: pointer;
+  -webkit-transition:0.5s;
+}
+
+.box:hover {
+  color: #FF4B4A;
+}
+
+.box::before, .box::after {
+  width: 100%;
+  height:100%;
+  z-index: 3;
+  content:'';
+  position: absolute;
+  top:0;
+  left:0;
+  box-sizing: border-box;
+  -webkit-transform: scale(0);
+  transition: 0.5s;
+}
+
+.curmudgeon::before {
+  border-bottom: 3px solid #FF4B4A;
+  border-left: 0;
+  -webkit-transform-origin: 0% 100%;
+}
+
+.curmudgeon::after {
+  border-top: 0;
+  border-right: 0;
+  -webkit-transform-origin: 50% 50%;
+}
+
+/** buttons **/
+
+.button{
+  display: flex;
+  justify-content: center;
+  background-color: #A8FFC1;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: #FF4B4A;
+}
+
+.button p{
+  display: flex;
+  width: 90%;
+  padding: 5px 0px;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+}
+
 
 
 /** Header **/
@@ -69,7 +155,7 @@ ul li{
 }
 
 #academy{
-  color: #8AB2A3;
+  color: #FF4B4A;
 }
 
 #colmar{
@@ -79,7 +165,7 @@ ul li{
 /** Banner **/
 
 .container.banner{
-  background-color: #FF876D;
+  background-color: #FF8787;
 }
 
 .banner-image{
@@ -102,26 +188,8 @@ ul li{
 .learn{
   justify-content: center;
   max-width: 40%;
-  color: #fff;
+  color: #ffffff;
   max-width: 30%;
-}
-
-.button{
-  display: flex;
-  justify-content: center;
-  background-color: #6DFFC9;
-  border-style: solid;
-  border-radius: 5px;
-  border-color: #8AB2A3;
-}
-
-.button p{
-  display: flex;
-  width: 90%;
-  padding: 5px 0px;
-  justify-content: center;
-  font-size: 22px;
-  font-weight: 700;
 }
 
 /** main section **/
@@ -150,7 +218,7 @@ ul li{
     margin: 1rem;
     border-style: solid;
     border-radius: 5px;
-    border-color: #8AB2A3;
+    border-color: #FF4B4A;
 }
 
 div .thumbnail img {
@@ -188,7 +256,7 @@ div.information .column {
 /** Course section **/
 
 .learning{
-  background-color: #FF876D;
+  background-color: #FF8787;
   padding: 32px 0;
   justify-content: center;
   align-items: center;
@@ -196,7 +264,7 @@ div.information .column {
 }
 
 .background{
-  background-color: #FF876D;
+  background-color: #FF8787;
 }
 
 .learning h2{
@@ -213,15 +281,18 @@ div.course-list {
 }
 
 .courses-thumbnail {
-    width: auto;
+    width: 100%;
     height: 10rem;
     overflow: hidden;
 }
 
 .courses {
-    max-width: 30%;
+    max-width: 27%;
     background-color: white;
     margin-bottom: 1rem;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: #FF4B4A;
 }
 .courses-thumbnail img{
     max-height: 100%;
@@ -236,4 +307,39 @@ div.course-list {
 
 .courses .column {
     margin: 1rem 1rem 1.5rem 1rem;
+}
+
+/** Thesis Exhibit **/
+
+#thesis{
+  padding: 1rem 0 0 0 ;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+  color: grey;
+}
+
+.information-thesis{
+  max-width: 33%;
+}
+
+/** footer **/
+
+
+footer {
+    display: flex;
+    background-color: #FF8787;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 1rem;
+}
+
+/** mobile section **/
+
+@media only screen and (max-width: 600px) {
+    *{
+      color: red;
+    }
 }
